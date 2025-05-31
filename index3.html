@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onkar Dhanewar | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      color: #fff;
+    }
+
+    nav a {
+      color: #ccc;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #fff;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.5rem;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #222;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      margin: 0.3rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      border: 1px solid #444;
+    }
+
+    .projects .card, .certificates .card {
+      background: #111;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      border: 1px solid #333;
+    }
+
+    .projects .card:hover, .certificates .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .resume a {
+      display: inline-block;
+      background: #fff;
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .resume a:hover {
+      background: #ccc;
+      color: #000;
+    }
+
+    .certificates a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .certificates a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #444;
+      border-radius: 8px;
+      background: #111;
+      color: #fff;
+    }
+
+    button {
+      background: #fff;
+      color: #000;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #999;
+      background: #111;
+      border-top: 1px solid #333;
+    }
+
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .about-container img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      flex-shrink: 0;
+    }
+
+   
+    .about-container p {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+      }
+
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Onkar Dhanewar</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <img src="IMG_20250525_170128.jpg" alt="Onkar Dhanewar" />
+    <p>
+      I'm Onkar Rajendra Dhanewar, a passionate Computer Science and Engineering student. I love coding, problem-solving, and learning new technologies. 
+      Currently seeking an internship opportunity to gain real-world experience and contribute to exciting projects.
+    </p>
+  </div>
+</section>
+
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <span>Web Development</span>
+  <span>C++</span>
+  <span>Figma</span>
+  <span>Problem Solving</span>
+  <span>Communication</span>
+</section>
+
+<section id="projects" class="projects">
+  <h2>Projects</h2>
+  <div class="card">
+    <h3>Student Management System</h3>
+    <p>A PHP & MySQL web app for managing student records with login/authentication features.</p>
+    <p><strong>Tech Stack:</strong> PHP, MySQL, HTML, CSS, JS</p>
+  </div>
+  <div class="card">
+    <h3>Personal Portfolio Website</h3>
+    <p>A responsive portfolio site showcasing skills and projects.</p>
+    <p><strong>Tech Stack:</strong> HTML, CSS, JS</p>
+  </div>
+</section>
+
+<section id="resume" class="resume">
+  <h2>Resume</h2>
+  <p>You can view or download my complete resume here:</p>
+  <a href="https://drive.google.com/file/d/1JUMa5dDmQQtQ3CAHg5XLd33onhprkW8o/view?usp=drive_link" target="_blank">Download Resume (PDF)</a>
+</section>
+
+<section id="certificates" class="certificates">
+  <h2>Certificates</h2>
+  <div class="card">
+    <p>Completed a course in <strong>C++ Programming</strong>.</p>
+    <p>
+      <a href="https://drive.google.com/file/d/1v-lUp6MkDTFtI880NgCRsuybXaMpQGNe/view?usp=drive_link" target="_blank">View Certificate</a>
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <p><strong>Phone:</strong> <a href="tel:+919284721194" style="color: #fff; text-decoration: none;">+91 9284721194</a></p>
+  <p><strong>Email:</strong> 
+    <a href="https://mail.google.com/mail/?view=cm&to=onkardhanewar@gmail.com" target="_blank" style="color: #fff; text-decoration: none;">
+      onkardhanewar@gmail.com
+    </a>
+  </p>
+
+
+</section>
+
+
+<footer>
+  &copy; 2025 Onkar Dhanewar | Built with 💻 and 🖤
+</footer>
+
+</body>
+</html>
